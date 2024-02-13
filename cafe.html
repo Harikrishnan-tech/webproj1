@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cafe.css" />
+    <script src="cafe.js" lang="Javascript"></script>
+    <style></style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>COOL CAFE</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-3 col-s-3 menu">
+        <ul>
+        <li onclick="showPage('home');">Home</li>
+        <li onclick="showPage('all products');">All Products</li>
+        <li onclick="showPage('order');">Order</li>
+        <li onclick="showPage('offers');">Offers</li>
+        <li onclick="showPage('image');">Image</li>
+        <li onclick="showPage('faqs');">FAQs</li>
+        <li onclick="showPage('contact-us');">Contact US</li>
+        <li onclick="showPage('about-us');">About US</li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-s-9">
+        <div class="hidden" id="home">
+        <h1>Welcome to COOL CAFE</h1>
+        <p> café is different from a coffee shop in that a variety of food items are usually offered at our café</p>
+        <p> Different types of foods is added by my cafe</p>
+         </div>
+        <div class="hidden" id="all products" >
+        <h1>All Products</h1>
+        <p>Cool Cafe provides foods following areas:
+          <ul>
+            <li>TEA
+              <ul>
+                <li>tea</li>
+                <li>Green tea</li>
+                <li>Black tea</li>
+                <li>Leamon tea</li>
+              </ul>
+            </li>
+            <li>COFFE
+              <ul>
+                <li>coffe</li>
+                <li>cold coffe</li>
+                <li>mocha</li>
+                <li>affogato</li>
+              </ul>
+            </li>
+            <li>PIZZA
+              <ul>
+                <li>cheese pizza</li>
+                <li>veg pizza</li>
+                <li>non-veg pizza</li>
+                <li>pepperoni pizza</li>
+              </ul>
+            </li>
+            <li>BURGER
+              <ul>
+                <li>mushroom</li>
+                <li>veg </li>
+                <li>non-veg </li>
+                <li>butter chicken</li>
+              </ul>
+            </li>
+            <li>SWEETS
+              <ul>
+                <li>gulab jamu</li>
+                <li>jalebi</li>
+                <li>rasgulla </li>
+                <li>ladoo</li>
+              </ul>
+            </li>
+            <li>KARAM
+              <ul>
+                <li>sattur sev</li>
+                <li>thattai</li>
+                <li> mixture</li>
+                <li>masala peanuts</li>
+              </ul>
+            </li>
+            <li>CAKES
+              <ul>
+                <li>vanila</li>
+                <li>black forest </li>
+                <li>white forest</li>
+                <li>blueberry</li>
+              </ul>
+            </li>
+            <li>DRINKS
+              <ul>
+                <li>apple juice</li>
+                <li>mango juice </li>
+                <li>lemon </li>
+                <li>watermealon</li>
+              </ul>
+            </li>
+
+          </ul>
+        </p>
+        </div>
+        <div class="hidden" id="contact-us">
+        <h1>Contact Us</h1>
+        <form action="#">
+          <ul>
+
+            <li>
+              <p class="left">
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" placeholder="John" />
+              </p>
+              <p class="pull-right">
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" placeholder="Smith" />
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <label for="email">Email <span class="req">*</span></label>
+                <input type="email" name="email" placeholder="john.smith@gmail.com" />
+              </p>
+            </li>
+            <li><div class="divider"></div></li>
+            <li>
+              <label for="comments">Comments</label>
+              <textarea cols="46" rows="3" name="comments"></textarea>
+            </li>
+
+            <li>
+              <input class="btn btn-submit" type="submit" value="Submit" />
+              <small>or press <strong>enter</strong></small>
+            </li>
+
+          </ul>
+        </form>
+
+        </div>
+        <div class="hidden" id="order">
+        <h1>Order</h1>
+          <form>
+            <label for="food">Select Food:</label>
+            <select id="food" name="food" required>
+                <option value="pizza">Pizza</option>
+                <option value="burger">Burger</option>
+                <option value="cakes">Cakes</option>
+                <option value="sweet">Sweet</option>
+                <option value="karam">Karam</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <button type="submit">Place Order</button>
+          </form>
+        </div>
+        <div class="hidden" id="faqs">
+        <h1>FAQs</h1>
+        <p> Q: How do I track the status of my order?</p>
+        <p> Q: When and how can I modify or cancel an order?</p>
+        <p> Q: Why was my order or item(s) cancelled?</p>
+        </div>
+        <div class="hidden" id="about-us">
+        <h1>About US</h1>
+        <p> Cool Cafe is a livelihood initiative by the differently-abled persons to provide delicious packed Snacks - Cookies, Chocolates, Cakes, Sweets & Savouries.</p>
+        <p><h3>Thank You</h3></p>
+        </div>
+        <div class="hidden" id="offers">
+            <h1>Offers</h1>
+            <p>Check out our special offers:</p>
+            <ul>
+                <li class="offers">50% off on all pizzas</li>
+                <li class="offers">Buy 1 get 1 free on burgers</li>
+                <li class="offers">Free dessert with every order of cakes</li>
+                <!-- Add more offers as needed -->
+            </ul>
+        </div>
+      </div>
+
+      <div class="col-3 col-s-12">
+        <div class="aside">
+          <h2>Today Special</h2>
+          <p>Pizza,Burger</p>
+          <h2>Offers</h2>
+          <p><h3>Combo offer</h3>Cakes&Sweets</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        <h2>Contact Us</h2>
+        Call us on :+91 96004 18995<br>
+        Email us on :coolcafe.com
+      </p>
+    </div>
+  </body>
+</html>
